@@ -8,10 +8,9 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 * [Why Concorda](./doc/why-concorda.md)
 
-**Installation**
+**[Deployment types](./doc/deployment-types.md)**
 
-* [Deployment types](./doc/deployment-types.md)
-* [Standalone Server](./doc/install-concorda-dashboard.md)
+* [Standalone Server](./doc/install-monolith.md)
 
 **Server**
 
