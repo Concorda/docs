@@ -21,7 +21,7 @@ then
 Also you can watch the files for changes and automatically rebuild the sources by running `npm run watch`
 in a different terminal.
 
-![Diagram](https://github.com/Concorda/docs/blob/master/doc/img.monolith.jpeg)
+![Diagram](https://github.com/Concorda/docs/blob/master/doc/img/monolith.jpeg)
 
 IMPORTANT NOTES
 ===============
