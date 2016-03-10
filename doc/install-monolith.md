@@ -12,7 +12,7 @@ then
 
 1. Run `npm install` to install all dependencies
 2. Copy `config/sample.env` to `config/production.env` or `config/development.env` and put the right configuration in there.
-3. In your `env` file set local=true
+3. In your `env` file set `EXTERNAL_API=false` and `EXTERNAL_API=false`
 4. Run `npm run build` to build the project.
 4. Run `npm start:production` to create a deploy and server on port `3050` in production mode
 	OR

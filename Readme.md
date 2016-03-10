@@ -11,6 +11,7 @@ Welcome to Concorda wiki. Please choose your topic below.
 **[Deployment types](./doc/deployment-types.md)**
 
 * [Standalone Server](./doc/install-monolith.md)
+* [Separate static file & Rest API servers](./doc/install-static-rest.md)
 
 **Server**
 
