@@ -12,7 +12,7 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 * [Installing the Client](./doc/install-client.md)
 * [Deploy Concorda as standalone server](./doc/install-monolith.md)
-* [Separate static file & Rest API servers](./doc/install-static-rest.md)
+* [Separate static file server & Rest API server](./doc/install-static-rest.md)
 
 **Setting Concorda**
 
