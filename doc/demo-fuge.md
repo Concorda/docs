@@ -62,6 +62,6 @@ There are some examples .yml files that defines the demo systems, such as:
 
 **Notes:**
 
- - For using curl command to see results please see [concorda-client-demo](https://github.com/concorda/concorda-client-demo)
+ - For examples of using curl commands to see results please see [concorda-client-demo](https://github.com/concorda/concorda-client-demo)
  - [Vidi Dashboard](https://github.com/vidi-insights/vidi-dashboard) can be used instead of [concorda-client-demo](https://github.com/concorda/concorda-client-demo). Vidi project has also a React UI that can be used as demo.
     
