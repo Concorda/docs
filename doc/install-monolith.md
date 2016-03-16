@@ -1,6 +1,6 @@
 Back to [TOC](../Readme.md)
 
-# Installing Concorda as a standalone server
+# Deploying Concorda as a standalone server
 
 Clone github repository for [Concorda Dashboard](https://github.com/concorda/concorda-dashboard)
 
@@ -12,9 +12,10 @@ then
 
 1. Run `npm install` to install all dependencies
 2. Copy `config/sample.env` to `config/production.env` or `config/development.env` and put the right configuration in there.
-3. In your `env` file set `EXTERNAL_API=false` and `EXTERNAL_API=false`
-4. Run `npm run build` to build the project.
-4. Run `npm start:production` to create a deploy and server on port `3050` in production mode
+3. In your `env` file set `EXTERNAL_API=false` and `EXTERNAL_CORE=false`
+4. Set true what type you want to use for transport between client application and Concorda: mesh or tcp
+5. Run `npm run build` to build the project.
+6. Run `npm start:production` to create a deploy and server on port `3050` in production mode
 	OR
 	`npm run start:dev` to create a deploy and server on port `3050` in development mode
 

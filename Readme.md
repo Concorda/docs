@@ -10,17 +10,14 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 **[Deployment types](./doc/deployment-types.md)**
 
-* [Standalone Server](./doc/install-monolith.md)
+* [Installing the Client](./doc/install-client.md)
+* [Deploy Concorda as standalone server](./doc/install-monolith.md)
 * [Separate static file & Rest API servers](./doc/install-static-rest.md)
 
-**Server**
+**Setting Concorda**
 
 * [Server API](./doc/server-api.md)
 * [Configuring Clients](./doc/configuring-clients.md)
-
-**Client**
-
-* [Using Concorda plugin](./doc/using-concorda-plugin.md)
 
 **Demo**
 

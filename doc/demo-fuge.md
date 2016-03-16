@@ -41,3 +41,18 @@ from inside concorda-fuge folder
 $ fuge shell system.yml
 ? fuge> start all
 ```
+
+## Demo fuge examples
+
+There are some examplee yml files that defines the demo systems, such as:
+ - system_monolith_mesh.yml - consist in:
+    - Concorda Dashboard deployed as a monolith application
+    - Client demo application
+    - Mesh base
+    - Postgres DB_
+    - For Client<->Concorda Dashboard communication there is used [seneca-mesh](https://github.com/rjrodger/seneca-mesh)
+ - system_monolith_tcp.yml - consist in:
+    - Concorda Dashboard deployed as a monolith application
+    - Client demo application
+    - Postgres DB_
+    - For Client<->Concorda Dashboard communication there is used [seneca-transport](https://github.com/senecajs/seneca-transport)
