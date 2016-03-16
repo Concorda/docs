@@ -1,6 +1,6 @@
 ![Banner][]
 
-**Concorda: User management system**
+**Concorda: A User Management System**
 
 Welcome to Concorda wiki. Please choose your topic below.
 
@@ -17,8 +17,9 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 **Setting Concorda**
 
- - [Server API](./doc/server-api.md)
  - [Configuring Clients](./doc/configuring-clients.md)
+
+**[Server API](./doc/server-api.md)**
 
 **Demo**
 
