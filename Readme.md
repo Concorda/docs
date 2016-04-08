@@ -16,7 +16,7 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 **Setting Concorda**
 
- - [Configuring Clients](./doc/configuring-clients.md)
+ - [Configuring Applications](./doc/configuring-clients.md)
 
 **[Server API](./doc/server-api.md)**
 
