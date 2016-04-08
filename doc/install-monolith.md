@@ -26,7 +26,7 @@ TRANSPORT_TYPE=tcp
 ```
 
 5. Run `npm run build` to build the project.
-6. Run `npm start` to start applicationcreate a deploy and server on port `3050` (or whatever you specified in the `production.env` file)
+6. Run `npm start` to start application and server on port `3050` (or whatever you specified in the `production.env` file)
 
 Also you can watch the files for changes and automatically rebuild the sources by running `npm run watch`
 in a different terminal.
