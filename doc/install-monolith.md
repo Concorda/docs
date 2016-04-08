@@ -17,6 +17,14 @@ then
    * `EXTERNAL_CORE=false` - this controls if the core implementation of Concorda will be running as a separate microservice.
 4. Set true what type you want to use for transport between client application and Concorda: mesh or tcp.
    * Recommendation is to use TCP transport but also mesh or other types of transport (HTTP/HTPS) can be used.
+   * Example:
+  
+```
+USE_MESH=false   
+USE_TRANSPORT=true   
+TRANSPORT_TYPE=tcp
+```
+
 5. Run `npm run build` to build the project.
 6. Run `npm start` to start applicationcreate a deploy and server on port `3050` (or whatever you specified in the `production.env` file)
 

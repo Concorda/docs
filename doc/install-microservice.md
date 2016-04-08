@@ -4,12 +4,13 @@ Back to [TOC](../Readme.md)
 
 ## Installing only Concorda microservice
 
-Note: Even if Concorda microservice is offering all required services for client authentication, in order to fully use the Concorda's features (includes user management, runtime configurations)
-you can use also Concorda Administration Dashboard, that can be installed and started as a separate application.
+Note: Even if Concorda microservice is offering all required services for client authentication, in order to fully use the 
+Concorda's features (includes user management, runtime configurations and others) you can use also Concorda Administration Dashboard, 
+that can be installed and started as a separate application.
 
 ## Installing and running Concorda microservice
 
-Clone github repository for [Concorda Dashboard](https://github.com/concorda/concorda)
+Clone github repository for [Concorda](https://github.com/concorda/concorda)
 
 ```
 git clone git@github.com:concorda/concorda.git
@@ -19,10 +20,7 @@ then
 
 1. Run `npm install` to install all dependencies
 2. Copy `config/sample.vars.env` to `config/production.env` and add there the right configuration.
-3. In your `config/production.env` file leave 
-   * `EXTERNAL_API=false` - this controls if the services will be exposed using a different Hapi Server instance.
-   * `EXTERNAL_CORE=false` - this controls if the core implementation of Concorda will be running as a separate microservice.
-4. **Set true what type you want to use for transport between client application and Concorda: mesh or tcp.**
+3. **Set true what type you want to use for transport between client application and Concorda: mesh or tcp.**
    * Recommendation is to use TCP transport but also mesh or other types of transport (HTTP/HTPS) can be used.
    * Example:
    
@@ -32,7 +30,7 @@ USE_TRANSPORT=true
 TRANSPORT_TYPE=tcp
 ```
    
-5. Run `npm start` to start application and server on port `3070` (or whatever you specified in the `production.env` file)
+4. Run `npm start` to start application and server on port `3070` (or whatever you specified in the `production.env` file)
 
 
 IMPORTANT NOTES
