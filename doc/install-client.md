@@ -72,22 +72,22 @@ Of course you can organize your code in different files, above is just a simple 
 Concorda client has the following options:
 
  - ```mesh``` - JSON
-    - ```active```: true | false (default false) - enable or disable the mesh transport support for communicating with Concorda project
-    - all other mesh options
+    - ```active```: true | false (default false) - enable or disable the [mesh](https://github.com/rjrodger/seneca-mesh) transport support for communicating with Concorda application
+    - all other mesh options (nothing required for default)
  - ```transport``` - JSON
-    - ```active```: true | false (default false) - enable or disable the seneca transport support for communicating with Concorda project
+    - ```active```: true | false (default false) - enable or disable the [seneca transport](https://github.com/senecajs/seneca-transport) support for communicating with Concorda application
     - ```type```:  (default 'tcp') type of transport
  - ```auth``` - JSON
-    - ```restrict``` (default: '/api') - define restricted rest api - see [Seneca-auth](https://github.com/senecajs/seneca-auth) for details
+    - ```restrict``` (default: '/api') - define restricted rest api - see [Seneca-auth](https://github.com/senecajs/seneca-auth) for details.
     - ```password``` - define the cookie password, should be at least 32 character long
     - other options as defined by [Seneca-auth](https://github.com/senecajs/seneca-auth)
- - ```concordaProtocol``` - protocol used by Concorda server  
- - ```concordaHost``` - host used by Concorda server  
- - ```concordaPort``` - port used by Concorda server  
- - ```protocol``` - protocol for current client application  
- - ```host``` - host for current client application  
- - ```port``` - port for current client application
- - ```appkey``` - unique key in the system, used internally to identify the application in the Concorda system
+ - ```concordaProtocol``` - protocol used by Concorda server - this is required when using external auth providers like Google/Github/Twitter  
+ - ```concordaHost``` - host used by Concorda server - this is required when using external auth providers like Google/Github/Twitter
+ - ```concordaPort``` - port used by Concorda server - this is required when using external auth providers like Google/Github/Twitter
+ - ```protocol``` - protocol for current client application - this is required when using external auth providers like Google/Github/Twitter
+ - ```host``` - host for current client application - this is required when using external auth providers like Google/Github/Twitter
+ - ```port``` - port for current client application - this is required when using external auth providers like Google/Github/Twitter
+ - ```appkey``` - unique key in the system, used internally to identify the application in the Concorda system.
       
       
 ## Demo Client example
