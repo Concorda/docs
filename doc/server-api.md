@@ -31,7 +31,7 @@ Concorda will expose the following HTTP API:
  PUT      | /api/user                          | Update an user, different from the one logged in |       |
  DELETE   | /api/user/{user_id}                | Delete an user                                   |       |
 
-## Client management
+## Application management
 
  Method   | URL                                | Description                                      | Since |
  ---------|------------------------------------|-----------------------------------------------------------

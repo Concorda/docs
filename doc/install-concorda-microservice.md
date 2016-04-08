@@ -13,11 +13,22 @@ git clone git@github.com:concorda/concorda-dashboard.git
 then
 
 1. Run `npm install` to install all dependencies
-2. Copy `config/sample.env` to `config/production.env` and add the right configuration in there.
-3. In your `env` file set `EXTERNAL_API=false` and `EXTERNAL_CORE=true`
-4. Set true what type you want to use for transport between client application and Concorda: mesh or tcp
+2. Copy `config/sample.vars.env` to `config/production.env` and add there the right configuration.
+3. In your `config/production.env` file leave 
+   * `EXTERNAL_API=false` - this controls if the services will be exposed using a different Hapi Server instance.
+   * **`EXTERNAL_CORE=true`** - this controls if the core implementation of Concorda will be running as a separate microservice.
+4. **Set true what type you want to use for transport between client application and Concorda: mesh or tcp.**
+   * Recommendation is to use TCP transport but also mesh or other types of transport (HTTP/HTPS) can be used.
+   * Example:
+   
+```
+USE_MESH=false   
+USE_TRANSPORT=true   
+TRANSPORT_TYPE=tcp
+```
+   
 5. Run `npm run build` to build the project.
-6. Run `npm start:production` to create a deploy and server on port `3050` in production mode
+6. Run `npm start` to start application and server on port `3050` (or whatever you specified in the `production.env` file)
 
 
 ## Installing and running Concorda microservice
@@ -31,7 +42,21 @@ git clone git@github.com:concorda/concorda.git
 then
 
 1. Run `npm install` to install all dependencies
-6. Run `npm run start` to run it
+2. Copy `config/sample.vars.env` to `config/production.env` and add there the right configuration.
+3. In your `config/production.env` file leave 
+   * `EXTERNAL_API=false` - this controls if the services will be exposed using a different Hapi Server instance.
+   * `EXTERNAL_CORE=false` - this controls if the core implementation of Concorda will be running as a separate microservice.
+4. **Set true what type you want to use for transport between client application and Concorda: mesh or tcp.**
+   * Recommendation is to use TCP transport but also mesh or other types of transport (HTTP/HTPS) can be used.
+   * Example:
+   
+```
+USE_MESH=false   
+USE_TRANSPORT=true   
+TRANSPORT_TYPE=tcp
+```
+   
+5. Run `npm start` to start application and server on port `3070` (or whatever you specified in the `production.env` file)
 
 
 # Installing with Fuge
