@@ -13,7 +13,6 @@ Welcome to Concorda wiki. Please choose your topic below.
  - [Installing the Client](./doc/install-client.md)
  - [Deploy Concorda as standalone server](./doc/install-monolith.md)
  - [Deploy Concorda-Dashboard with Concorda running as microservice](./doc/install-concorda-microservice.md)
- - [Separate static file server & Rest API server](./doc/install-static-rest.md)
 
 **Setting Concorda**
 
