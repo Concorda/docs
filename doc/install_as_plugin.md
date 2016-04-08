@@ -1,10 +1,20 @@
 Back to [TOC](../Readme.md)
 
-# Deployment types
+# Deploy as a Seneca plugin with all internal functionality
 
-## Deploy as a Seneca plugin with all internal functionality
+Note: Even if Concorda microservice is offering all required services for client authentication, in order to fully use the 
+Concorda's features (includes user management, runtime configurations and others) you can use also Concorda Administration Dashboard, 
+that can be installed and started as a separate application.
 
-Use the following example to register as plugin
+## Installing and running Concorda as internal Seneca plugin
+
+Install Concorda module in your application
+
+```
+npm install --save concorda
+```
+
+then
 
 ```
 const Concorda = require('concorda')
@@ -14,10 +24,7 @@ module.exports = function (options) {
 
   seneca
     .use(Concorda, {
-      local: true,
-      'google-auth' : {},
-      'twitter-auth': {},
-      'github-auth' : {}
+    .....options.....
     })
 
   return {
@@ -27,32 +34,10 @@ module.exports = function (options) {
 
 ```
 
-## Deploy as a Seneca plugin with all functionality provided by a Concorda microservice deployment
 
-Use the following example to register as plugin
+IMPORTANT NOTES
+===============
 
-```
-const Concorda = require('concorda')
-
-module.exports = function (options) {
-  var seneca = this
-
-  seneca
-    .use('mesh', {auto: true})
-    .use(Concorda, {
-      local: false
-    })
-
-  return {
-    name: 'your-plugin'
-  }
-}
-
-```
-  
-
-## Deploy as a microservice
-
-```
-node start.js
-```
+1. By default the following user is added to Concorda as part of initial setup: admin@concorda.com/concorda
+2. It is very important that after you started Concorda for the first time to login and change administrator password and e-mail.
+3. Now you need to install and use ```concorda-client``` in your application as described [here](./install-client.md)
