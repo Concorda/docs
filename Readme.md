@@ -10,9 +10,10 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 **[Deployment types](./doc/deployment-types.md)**
 
- - [Deploy only Concorda microservice](./doc/install-microservice.md)
- - [Deploy Concorda as standalone server](./doc/install-monolith.md)
- - [Deploy Concorda-Dashboard with Concorda running as microservice](./doc/install-concorda-microservice.md)
+ - [Deploy only Concorda microservice](./doc/deploy-microservice.md)
+ - [Deploy as a Seneca plugin](./doc/deploy-plugin.md)
+ - [Deploy Concorda as standalone server](./doc/deploy-monolith.md)
+ - [Deploy Concorda-Dashboard with Concorda running as microservice](./doc/deploy-concorda-microservice.md)
 
 **[Installing the Client](./doc/install-client.md)**
 
