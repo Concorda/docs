@@ -79,3 +79,7 @@ IMPORTANT NOTES
 
 1. By default the following user is added to Concorda as part of initial setup: admin@concorda.com/concorda
 2. It is very important that after you started Concorda for the first time to login and change administrator password and e-mail.
+
+## Demo
+
+A demo project that is using the Concorda as [plugin](https://github.com/Concorda/concorda-client-demo/blob/master/start_plugin.js) can be found [here](https://github.com/Concorda/concorda-client-demo).

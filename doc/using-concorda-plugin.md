@@ -39,4 +39,4 @@ const defaultOptions = {
 
 ## Demo
 
-A demo project that is using the Concorda as [plugin](https://github.com/Concorda/concorda-client-demo/blob/master/start_plugin.js) can be found [here](https://github.com/Concorda/concorda-client-demo).
+A demo project that is using the Concorda as [plugin](https://github.com/Concorda/concorda-client-demo/blob/master/start.js) can be found [here](https://github.com/Concorda/concorda-client-demo).
