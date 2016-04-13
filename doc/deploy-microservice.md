@@ -12,7 +12,7 @@ that can be installed and started as a separate application.
 
 Clone github repository for [Concorda](https://github.com/concorda/concorda)
 
-```
+```sh
 git clone git@github.com:concorda/concorda.git
 ```
 
@@ -24,7 +24,7 @@ then
    * Recommendation is to use TCP transport but also mesh or other types of transport (HTTP/HTPS) can be used.
    * Example:
    
-```
+```js
 USE_MESH=false   
 USE_TRANSPORT=true   
 TRANSPORT_TYPE=tcp

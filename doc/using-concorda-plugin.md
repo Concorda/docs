@@ -8,7 +8,7 @@ A client application should simply load the [Concorda-client](https://github.com
 
 Use the following example to register the plugin
 
-```
+```sh
 seneca.use('concorda-client', options)
 ```
 
@@ -26,7 +26,7 @@ The Concorda client plugin require following options:
 
 Default options:
 
-```
+```javascript
 const defaultOptions = {
   concordaProtocol: 'http',
   concordaHost: 'localhost',

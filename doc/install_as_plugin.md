@@ -10,13 +10,13 @@ that can be installed and started as a separate application.
 
 Install Concorda module in your application
 
-```
+```sh
 npm install --save concorda
 ```
 
 then
 
-```
+```javascript
 const Concorda = require('concorda')
 
 module.exports = function (options) {

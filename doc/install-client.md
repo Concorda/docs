@@ -10,7 +10,7 @@ In order to use Concorda some simple things needs to be done:
 
 Now you need to use concorda-client like this:
  
-```
+```javascript
 
 var Hapi = require('hapi')
 var Bell = require('bell')
