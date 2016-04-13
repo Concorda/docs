@@ -35,6 +35,44 @@ module.exports = function (options) {
 ```
 
 
+## Concorda settings
+
+When using it as a Seneca plugin some options should be passed to control various features of Concorda.
+
+ * publicRegister - allowed values "0"/"1" - disable/enable public user register. If public register is disabled ("0") then user register can be done only based on user invitation.
+ * passwordPolicy - this will define the password policy to be used to enforce stronger user passwords.
+    * requireLowercase - allowed values "0"/"1" - activate if lowercase characters are required in password
+    * requireUppercase - allowed values "0"/"1" - activate if uppercase characters are required in password
+    * requireNumeric - allowed values "0"/"1" - activate if numeric characters are required in password
+    * minLength - numeric value - minimum length for user passwords.
+ * authType - this will define the allowed authentication types.
+    * google - allowed values "0"/"1" - disable/enable google login
+    * github - allowed values "0"/"1" - disable/enable github login
+    * twitter - allowed values "0"/"1" - disable/enable twitter login
+ * emailTemplateFolder - absolute path to mail template folder. Example of mail templates can be found [here](https://github.com/Concorda/concorda/tree/master/lib/email-templates)
+   
+An example of default settings used internally be Concorda is:
+
+```javascript
+{
+  "publicRegister": "1",
+  "authType": {
+    "google": "0",
+    "github": "0",
+    "twitter": "0"
+  },
+  "configured": true,
+  "passwordPolicy": {
+    "requireLowercase": "0",
+    "requireNumeric": "0",
+    "requireUppercase": "0",
+    "minLength": 6
+  },
+  "emailTemplateFolder": "/home/malex/workspace/nearForm/concorda/concorda/lib/email-templates/"
+}
+```
+
+
 IMPORTANT NOTES
 ===============
 
