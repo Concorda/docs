@@ -16,7 +16,8 @@ npm install --save concorda
 
 then
 
-```
+```javascript
+
 const Concorda = require('concorda')
 
 module.exports = function (options) {
@@ -53,7 +54,7 @@ When using it as a Seneca plugin some options should be passed to control variou
    
 An example of default settings used internally be Concorda is:
 
-```javascript
+```json
 {
   "publicRegister": "1",
   "authType": {
