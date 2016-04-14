@@ -25,7 +25,11 @@ module.exports = function (options) {
 
   seneca
     .use(Concorda, {
-    .....options.....
+        appkey: 'concorda',
+        auth: {
+            restrict: '/api',
+            password: process.env.COOKIE_PASSWORD || 'some long password'
+        }    
     })
 
   return {
@@ -40,17 +44,18 @@ module.exports = function (options) {
 
 When using it as a Seneca plugin some options should be passed to control various features of Concorda.
 
- * publicRegister - allowed values "0"/"1" - disable/enable public user register. If public register is disabled ("0") then user register can be done only based on user invitation.
- * passwordPolicy - this will define the password policy to be used to enforce stronger user passwords.
-    * requireLowercase - allowed values "0"/"1" - activate if lowercase characters are required in password
-    * requireUppercase - allowed values "0"/"1" - activate if uppercase characters are required in password
-    * requireNumeric - allowed values "0"/"1" - activate if numeric characters are required in password
-    * minLength - numeric value - minimum length for user passwords.
- * authType - this will define the allowed authentication types.
-    * google - allowed values "0"/"1" - disable/enable google login
-    * github - allowed values "0"/"1" - disable/enable github login
-    * twitter - allowed values "0"/"1" - disable/enable twitter login
- * emailTemplateFolder - absolute path to mail template folder. Example of mail templates can be found [here](https://github.com/Concorda/concorda/tree/master/lib/email-templates)
+ * `appkey` - the application key - leave it with 'concorda' as this application is create by default in the DB. If you want another application key, plate create another application and set corresponding appkey here.
+ * `publicRegister` - allowed values "0"/"1" - disable/enable public user register. If public register is disabled ("0") then user register can be done only based on user invitation.
+ * `passwordPolicy` - this will define the password policy to be used to enforce stronger user passwords.
+    * `requireLowercase` - allowed values "0"/"1" - activate if lowercase characters are required in password
+    * `requireUppercase` - allowed values "0"/"1" - activate if uppercase characters are required in password
+    * `requireNumeric` - allowed values "0"/"1" - activate if numeric characters are required in password
+    * `minLength` - numeric value - minimum length for user passwords.
+ * `authType` - this will define the allowed authentication types.
+    * `google` - allowed values "0"/"1" - disable/enable google login
+    * `github` - allowed values "0"/"1" - disable/enable github login
+    * `twitter` - allowed values "0"/"1" - disable/enable twitter login
+ * `emailTemplateFolder` - absolute path to mail template folder. Example of mail templates can be found [here](https://github.com/Concorda/concorda/tree/master/lib/email-templates)
    
 An example of default settings used internally be Concorda is:
 

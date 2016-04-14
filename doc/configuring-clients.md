@@ -11,6 +11,6 @@ Managing applications can be done from using the Applications option from main m
 
 The main properties of an application are:
 
- * name
- * internal key - appkey - communication key string identifying the external application as a Concorda client. This should be the same as the appkey set in the concorda's [client ](./install-clients.md) options.
+ * `name`
+ * internal key - `appkey` - communication key string identifying the external application as a Concorda client. This should be the same as the appkey set in the concorda's [client ](./install-clients.md) options.
  * others - TBD
