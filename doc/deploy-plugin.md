@@ -46,6 +46,9 @@ When using it as a Seneca plugin some options should be passed to control variou
 
  * `appkey` - the application key - leave it with 'concorda' as this application is create by default in the DB. If you want another application key, plate create another application and set corresponding appkey here.
  * `publicRegister` - allowed values "0"/"1" - disable/enable public user register. If public register is disabled ("0") then user register can be done only based on user invitation.
+ * `USER_POLICY` - this will define the user policy..
+    * `activateAccount` - allowed values "0"/"1" - force account activation from confirm register email
+    * `forceChangePassword` - allowed values "0"/"1" - force user change password on first login if password was auto-generated on register.
  * `passwordPolicy` - this will define the password policy to be used to enforce stronger user passwords.
     * `requireLowercase` - allowed values "0"/"1" - activate if lowercase characters are required in password
     * `requireUppercase` - allowed values "0"/"1" - activate if uppercase characters are required in password

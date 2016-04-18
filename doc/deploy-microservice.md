@@ -38,6 +38,9 @@ When using without Concorda Dashboard, the only way to configure Concorda is by 
 On `config/production.env` file you will find these variables:
 
  * `PUBLIC_REGISTER` - allowed values "0"/"1" - disable/enable public user register. If public register is disabled ("0") then user register can be done only based on user invitation.
+ * `USER_POLICY` - this will define the user policy..
+    * `activateAccount` - allowed values "0"/"1" - force account activation from confirm register email
+    * `forceChangePassword` - allowed values "0"/"1" - force user change password on first login if password was auto-generated on register.
  * `PASSWORD_POLICY` - this will define the password policy to be used to enforce stronger user passwords.
     * `requireLowercase` - allowed values "0"/"1" - activate if lowercase characters are required in password
     * `requireUppercas` - allowed values "0"/"1" - activate if uppercase characters are required in password
