@@ -23,7 +23,7 @@ Concorda will expose the following HTTP API:
 ## User management
 
  Method   | URL                                | Description                                      | Since |
- ---------|------------------------------------|-----------------------------------------------------------
+ ---------|------------------------------------|--------------------------------------------------|-------|
  POST     | /api/user/{user_id}/session/close  | Close sessions for selected user                 |       |
  GET      | /api/user                          | Get list of users                                |       |
  GET      | /api/user/user_id                  | Load user by id                                  |       |
@@ -34,7 +34,7 @@ Concorda will expose the following HTTP API:
 ## Application management
 
  Method   | URL                                | Description                                      | Since |
- ---------|------------------------------------|-----------------------------------------------------------
+ ---------|------------------------------------|--------------------------------------------------|-------|
  GET      | /api/client                        | Get list of clients                              |       |
  GET      | /api/client/:clientId              | Get client                                       |       |
  GET      | /client/:client_name               | Public service for getting client & its settings |       |
@@ -48,14 +48,14 @@ Concorda will expose the following HTTP API:
 ## Tag management
 
  Method   | URL                                | Description                              | Since |
- ---------|------------------------------------|---------------------------------------------------
+ ---------|------------------------------------|------------------------------------------|-------|
  GET      | /api/tag                           | Get list of tags                         |       |
  GET      | /api/tags                          | Get list of tags. An alias for /api/tag  |       |
 
 ## User-Group management
 
  Method   | URL                                | Description                                                    | Since |
- ---------|------------------------------------|-------------------------------------------------------------------------
+ ---------|------------------------------------|----------------------------------------------------------------|-------|
  POST/PUT | /api/user/:userId/groups           | Add groups to a user. Request must contain groups list of ids  | 0.1.0 |
  POST/PUT | /api/user/:userId/clients          | Add clients to a user. Request must contain clients list of ids| 0.1.0 |
 
