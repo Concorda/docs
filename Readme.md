@@ -22,6 +22,10 @@ Welcome to Concorda wiki. Please choose your topic below.
  - [General Settings](./doc/general-settings.md)
  - [Configuring Applications](./doc/configuring-clients.md)
 
+**Concorda Dashboard**
+
+ - [User list](./doc/dashboard-user-list.md)
+
 **[Server API](./doc/server-api.md)**
 
 **Demo**
