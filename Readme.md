@@ -19,6 +19,7 @@ Welcome to Concorda wiki. Please choose your topic below.
 
 **Setting Concorda**
 
+ - [General Settings](./doc/general-settings.md)
  - [Configuring Applications](./doc/configuring-clients.md)
 
 **[Server API](./doc/server-api.md)**
