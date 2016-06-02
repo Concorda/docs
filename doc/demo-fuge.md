@@ -16,7 +16,7 @@ Install these before getting started.
 You can clone these branches directly - for example:
 
 ```sh
-$ git clone https://github.com/concorda/concorda-fuge
+$ git clone https://github.com/concorda/concorda-system
 ```
 
 You need to install all dependencies:
